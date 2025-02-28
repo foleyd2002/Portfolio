@@ -61,8 +61,8 @@ This project is deployed using Vercel/Netlify/GitHub Pages (mention your hosting
 
 Feel free to connect with me:
 
-- [GitHub] [https://github.com/foleyd2002]
-- [LinkedIn] [https://www.linkedin.com/in/darragh-foley-145820239/]
+- GitHub: https://github.com/foleyd2002
+- LinkedIn: https://www.linkedin.com/in/darragh-foley-145820239/
 
 ## 💡 Tech Stack
 
