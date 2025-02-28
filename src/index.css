@@ -7,3 +7,31 @@ html, body {
   background: black;
   color: #f3f4f6
 }
+
+@layer utilities {
+  @keyframes loading{
+    0%{
+      transform: transalteX(-100%);
+    }
+    100%{
+      transform: transalteX(250%);
+    }
+  }
+
+  .animate-loading-bar {
+    animation: loading 0.8s ease infinite;
+  }
+
+  @keyframes blink{
+    0%, 100%{
+      opacity: 1;
+    }
+    50%{
+      opacity: 0;
+    }
+  }
+
+  .animate-blink {
+    animation: blink 0.8s step-end infinite;
+  }
+}
