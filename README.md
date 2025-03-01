@@ -68,4 +68,12 @@ Feel free to connect with me:
 
 - React, Tailwind CSS, JavaScript, HTML, CSS
 
+## 🙏 Sources/Shout-Outs
+
+Thanks to all the following sources 
+
+-
+-
+-
+
 ⭐ Feel free to fork, star, or contribute to this project! ⭐
