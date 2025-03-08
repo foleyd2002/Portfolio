@@ -14,7 +14,24 @@ export const About = () => {
         "Django", 
         "Node.js", 
         "SQL",
-    ]    
+    ] 
+    
+    const toolsTech = [
+        "GitHub", 
+        "Jenkins", 
+        "NewRelic", 
+        "CoPilot", 
+        "Docker",
+    ] 
+
+    const softSkills = [
+        "Communication", 
+        "Problem Solving", 
+        "Knowledge Seeker", 
+        "Collaboration", 
+        "Agile Teams Experience",
+    ] 
+
     
 
     return <section id="about" className="min-h-screen flex justify-center py-20">
@@ -29,6 +46,7 @@ export const About = () => {
                 </p>
             </div>
 
+            {/* This is the grid for the skills, Frontend */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="rounded-xl p-6 hover:-translate-y-1 transition-all text-center">
                     <h3 className="text-xl font-bold mb-4 text-white text-center">Frontend</h3>
@@ -43,11 +61,42 @@ export const About = () => {
                         ))}
                     </div>
                 </div>
-
+                
+                {/* This is the grid for the skills, Backend */}
                 <div className="rounded-xl p-6 hover:-translate-y-1 transition-all text-center">
                     <h3 className="text-xl font-bold mb-4 text-white text-center">Backend</h3>
                     <div className="flex flex-wrap gap-3 text-center">
                         {backendSkills.map((tech, key) => (
+                            <span 
+                                key={key}
+                                className=" text-center bg-red-500 text-white py-2 px-4 min-w-[90px] rounded-full text-sm 
+                                        flex justify-start items-center hover:bg-red-800 transition-all">
+                                {tech}
+                            </span>
+                        ))}
+                    </div>
+                </div>
+
+                {/* This is the grid for the skills, Tools and Tech */}
+                <div className="rounded-xl p-6 hover:-translate-y-1 transition-all text-center">
+                    <h3 className="text-xl font-bold mb-4 text-white text-center">Tools</h3>
+                    <div className="flex flex-wrap gap-3 text-center">
+                        {toolsTech.map((tech, key) => (
+                            <span 
+                                key={key}
+                                className=" text-center bg-red-500 text-white py-2 px-4 min-w-[90px] rounded-full text-sm 
+                                        flex justify-start items-center hover:bg-red-800 transition-all">
+                                {tech}
+                            </span>
+                        ))}
+                    </div>
+                </div>
+
+                {/* This is the grid for the soft skills */}
+                <div className="rounded-xl p-6 hover:-translate-y-1 transition-all text-center">
+                    <h3 className="text-xl font-bold mb-4 text-white text-center">Soft Skills</h3>
+                    <div className="flex flex-wrap gap-3 text-center">
+                        {softSkills.map((tech, key) => (
                             <span 
                                 key={key}
                                 className=" text-center bg-red-500 text-white py-2 px-4 min-w-[90px] rounded-full text-sm 
